@@ -816,11 +816,11 @@ footer a:hover {
 }
 
 /* Floating form labels */
-.form_float > .form_-ontrol {
+.form-floating > .form_-ontrol {
   position: relative;
 }
 
-.form_float > label {
+.form-floating > label {
   z-index: 2;
   width: auto;
   height: auto;
@@ -837,8 +837,8 @@ footer a:hover {
     color 0.25s ease;
 }
 
-.form_float > .form-control:focus ~ label,
-.form_float > .form-control:valid ~ label {
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:valid ~ label {
   top: 0;
   color: var(--ink-soft);
   background: var(--paper);
@@ -846,7 +846,7 @@ footer a:hover {
   border: none;
 }
 
-.form_float > .form-control:focus {
+.form-floating > .form-control:focus {
   z-index: 1;
 }
 .fa-brands,.fa-solid {
