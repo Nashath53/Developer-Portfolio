@@ -831,7 +831,7 @@ footer a:hover {
   padding: 0 0.35rem;
   color: var(--ink-soft);
   pointer-events: none;
-  background-color: var(--paper);
+  background-color: transparent;
   transform: translateY(-50%);
   transition:
     top 0.25s ease,
@@ -840,11 +840,12 @@ footer a:hover {
 }
 
 .form-floating > .form-control:focus ~ label,
-.form-floating > .form-control:not(:placeholder-shown) ~ label {
+.form-floating > .form-control:valid ~ label {
   top: 0;
   color: var(--ink-soft);
   background: var(--paper);
   transform: translateY(-50%) scale(0.85);
+  border: none;
 }
 
 .form-floating > .form-control:focus {
