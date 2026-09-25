@@ -689,23 +689,21 @@ body:has(.theme-toggle:checked) .darkest{
   }
 }
 
-.form-control,
+.form_control,
 .form-select {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   color: var(--ink);
 }
-.form-control:focus,
+.form_control:focus,
 .form-select:focus {
   background: var(--paper);
   border-color: var(--blue);
   box-shadow: 0 0 0 1px var(--blue);
   color: var(--ink);
 }
-.form-floating > label {
-  color: var(--ink-soft);
-}
+
 
 footer {
   margin-left: var(--panel-w);
@@ -818,11 +816,11 @@ footer a:hover {
 }
 
 /* Floating form labels */
-.form-floating > .form-control {
+.form_float > .form_control {
   position: relative;
 }
 
-.form-floating > label {
+.form_float > label {
   z-index: 2;
   width: auto;
   height: auto;
@@ -839,8 +837,8 @@ footer a:hover {
     color 0.25s ease;
 }
 
-.form-floating > .form-control:focus ~ label,
-.form-floating > .form-control:valid ~ label {
+.form_float > .form_control:focus ~ label,
+.form_float > .form_control:valid ~ label {
   top: 0;
   color: var(--ink-soft);
   background: var(--paper);
@@ -848,9 +846,9 @@ footer a:hover {
   border: none;
 }
 
-.form-floating > .form-control:focus {
+.form_float > .form_control:focus {
   z-index: 1;
 }
 .fa-brands,.fa-solid {
-  margin: 0 10px;
+  margin-right: 8px;
 }
