@@ -408,19 +408,19 @@
           <div class="row g-3">
             <div class="col-md-6">
               <div class="form_float">
-                <input type="text" class="form_control" id="fName" name="name" placeholder="Name" required>
+                <input type="text" class="form-control" id="fName" name="name" placeholder="Name" required>
                 <label for="fName">Name</label>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form_float">
-                <input type="email" class="form_control" id="fEmail" name="email" placeholder="Email" required>
+                <input type="email" class="form-control" id="fEmail" name="email" placeholder="Email" required>
                 <label for="fEmail">Email</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form_float">
-                <textarea class="form_control" id="fMsg" name="message" placeholder="Message" style="height:120px;" required></textarea>
+                <textarea class="form-control" id="fMsg" name="message" placeholder="Message" style="height:120px;" required></textarea>
                 <label for="fMsg">What are you building?</label>
               </div>
             </div>
@@ -597,57 +597,3 @@
 </html>
 
 
-
-
-
-
-<!--   // ---- Cycling hero word ----
-  const words = ["websites","interfaces","features","products"];
-  let wIdx = 0;
-  const cycleEl = document.getElementById('cycleWord');
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(!reduceMotion){
-    setInterval(() => {
-      wIdx = (wIdx + 1) % words.length;
-      cycleEl.style.opacity = 0;
-      setTimeout(() => {
-        cycleEl.textContent = words[wIdx];
-        cycleEl.style.opacity = 1;
-      }, 180);
-    }, 2400);
-    cycleEl.style.transition = 'opacity 0.18s ease';
-  }
-
-  // ---- Coordinate readout in hero ----
-  const hero = document.getElementById('hero');
-  const readout = document.getElementById('coordReadout');
-  if(!reduceMotion){
-    hero.addEventListener('mousemove', (e) => {
-      const rect = hero.getBoundingClientRect();
-      const x = Math.round(e.clientX - rect.left);
-      const y = Math.round(e.clientY - rect.top);
-      readout.textContent = `x: ${x}, y: ${y}`;
-    });
-  }
-
-  // ---- Active layer highlight on scroll ----
-  const sections = document.querySelectorAll('main section[id]');
-  const links = document.querySelectorAll('.layer-link');
-  const skillFills = document.querySelectorAll('.skill-fill');
-  skillFills.forEach(fill => {
-    fill.style.setProperty('--skill-level', fill.style.width);
-    if (reduceMotion) fill.classList.add('is-visible');
-  });
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        links.forEach(l => l.classList.remove('active'));
-        document.querySelectorAll(`.layer-link[href="#${entry.target.id}"]`).forEach(l => l.classList.add('active'));
-        if (entry.target.id === 'about' && !reduceMotion) {
-          skillFills.forEach(fill => fill.classList.add('is-visible'));
-        }
-      }
-    });
-  }, { rootMargin: '-40% 0px -50% 0px' });
-  sections.forEach(s => observer.observe(s));-->
