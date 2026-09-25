@@ -689,14 +689,14 @@ body:has(.theme-toggle:checked) .darkest{
   }
 }
 
-.form_control,
+.form-control,
 .form-select {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   color: var(--ink);
 }
-.form_control:focus,
+.form-control:focus,
 .form-select:focus {
   background: var(--paper);
   border-color: var(--blue);
@@ -816,7 +816,7 @@ footer a:hover {
 }
 
 /* Floating form labels */
-.form_float > .form_control {
+.form_float > .form_-ontrol {
   position: relative;
 }
 
@@ -837,8 +837,8 @@ footer a:hover {
     color 0.25s ease;
 }
 
-.form_float > .form_control:focus ~ label,
-.form_float > .form_control:valid ~ label {
+.form_float > .form-control:focus ~ label,
+.form_float > .form-control:valid ~ label {
   top: 0;
   color: var(--ink-soft);
   background: var(--paper);
@@ -846,7 +846,7 @@ footer a:hover {
   border: none;
 }
 
-.form_float > .form_control:focus {
+.form_float > .form-control:focus {
   z-index: 1;
 }
 .fa-brands,.fa-solid {
